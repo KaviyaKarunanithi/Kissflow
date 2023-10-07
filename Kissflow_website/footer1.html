@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Footer</title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+			list-style: none;
+			text-decoration: none;
+
+		}
+		a{
+			color: black;
+			text-size:20px;
+		}
+		
+		footer ul li{
+			margin:30px;
+
+		}
+		footer{
+			background: whitesmoke;
+			width: 100%;
+			height: 500px;
+		}
+		.parent{
+			display: flex;
+		}
+		h1:hover{
+			color:red;
+			text-align: center;
+		}
+		body{
+			background: whitesmoke;
+		}
+		.main{
+			display: flex;
+			justify-content: space-around;
+			margin-top: 90px;
+		}
+		.image1{
+			width:16%;
+			height:320px;
+			margin:10px;
+			border-radius: 400px;
+			padding-top: 50px;
+			padding-left: 20px;
+			padding-right: 20px;
+			border: 1px solid black;
+			background-color: black;
+		}
+		.image2{
+			height:320px;
+			width:16%;
+			margin:10px;
+			border-radius: 400px;
+			padding-top: 50px;
+			padding-left: 20px;
+			padding-right: 20px;
+			border: 1px solid black;
+			background-color: blue;
+		}
+		.image3{
+			height:320px;
+			width:16%;
+			margin:10px;
+			border-radius: 400px;
+			padding-top: 50px;
+			padding-left: 20px;
+			padding-right: 20px;
+			border: 1px solid black;
+			background-color: black;
+		}
+		.image4{
+			height:320px;
+			width:16%;
+			margin:10px;
+			border-radius: 400px;
+			padding-top: 50px;
+			padding-left: 20px;
+			padding-right: 20px;
+			border: 1px solid black;
+			background-color: blue;
+		}
+		.board img{
+        	height: 40px;
+			margin-bottom: 50px;
+			margin-left: 90px;
+         }
+		.main img{
+			width:90%;
+			height: 260px;
+			margin-left: 10px;
+			margin-top: 10px;
+		}
+		 .main p{
+			color:white;
+			text-align: center;
+			font-size: 150%;
+		}
+		.nav1{
+			width:100%;
+			height: 60px;
+			background: grey;
+		}
+		.nav2{
+			float:left;
+			width:100%;
+			height:60px;
+			background: white;
+
+		}
+		.class ul li{
+			display: inline-block;
+		}
+		.class img{
+			margin-left: 10%;
+		}
+		.class a{
+			margin-left: 20%;
+			padding: 30px;
+		}
+		.top ul li{
+             display: inline-block;
+		}
+		.class input[type="submit"]{
+			width:10%;
+	   		height: 30px;
+			background: blue;
+			color:white;
+			float:right;
+			border: none;
+			margin-right: 10px;
+			margin-top: 10px;
+		}
+
+		.top a{
+			margin-left: 550%;
+			padding: 30px;
+			float: left;
+		}
+		.kaviya h1{
+		   padding-left: 15%;
+		   padding-top: 10%;
+		   font-size: 45px;
+		   font-style:Bold ;
+		}
+		.kaviya p{
+			text-align: center;
+			font-size: 70px;
+			color: blueviolet;
+		}
+		.kaviya input[type="submit"]{
+			width:15%;
+	   		height: 40px;
+			background: blue;
+			color:white;
+			border: none;
+			margin-right: 10px;
+			margin-top: 40px;
+			margin-left: 500px;
+		}
+		.kaviya h2{
+			padding-left: 25%;
+		    padding-top: 20px;
+		    font-size: 30px;
+		    font-style:Bold ;
+		}
+		.parent1{
+            width:100%;
+            height:2100px;
+            background-color: black;
+            border: 1px solid;
+		}
+		.parent1 h3{
+			color: white;
+			margin-left: 30px;
+			font-size: 40px;
+			margin-top: 30px;
+		}
+		.parent1 p1{
+			color:blueviolet;
+			margin-left: 30px;
+			font-size: 40px;
+		}
+		.left1 img{
+			width:40%;
+			height: 350px;
+			margin-top: 20px;
+			margin-left: 20px;
+		}
+		.right1{
+			width:40%;
+			height:30px;
+			background-color: black;
+			border: 1px solid;
+			float: right;
+		}
+		.right1 input[type="submit"]{
+			width:15%;
+	   		height: 40px;
+			background: purple;
+			color: white;
+			border: none;
+			margin-right: 410px;
+			margin-top: ;
+			margin-left: px;
+			float: right;
+			border-radius: 20px;
+		}
+		.right1 h4{
+			float:right;
+			color: white;
+			font-size: 30px;
+			margin-left: 50px;
+			margin-bottom: 10px;
+			margin-right: 60px;
+			margin-top: 30px;
+		}
+		.right1 p2{
+			float: right;
+			color: white;
+			font-size: 25px;
+			margin-left: 50px;
+			margin-bottom: 50px;
+			margin-right: 60px;
+		}
+		.right1 button{
+			width: 50%;
+			height: 40px;
+			border-color: blue;
+			background: blue;
+			color: white;
+			margin-right: 160px;
+			border-radius: 15px;
+		}
+		.left2{
+			border: 1px solid black;
+			margin-left: 100px;
+			width: 30%;
+			height: 470px;
+			float: left;
+			margin-top: 20px;
+			margin-right: 80px;
+		}
+		.left2 button{
+			width: 50%;
+			height: 35px;
+            margin-top: 20px;
+            border-radius: 15px;
+            font-size: 15px;
+            border-color: purple;
+            background: purple;
+            color: white;
+            margin-right: 200px;
+
+		}
+		.lefth1 h1{
+			color: white;
+			margin-top: 30px;
+		}
+		.leftp1 p{
+			color: white;
+			font-size: 25px;
+		}
+		.leftbut2 button{
+			width: 60%;
+			height: 40px;
+			border-color: blue;
+			background: blue;
+			color: white;
+		}
+		.right2 img{
+            width: 40%;
+            height: 400px;
+            margin-top: 20px;
+			margin-left: 100px;
+		}
+		.left3 img{
+			width: 40%;
+			height: 400px;
+			float: left;
+			margin-top: 20px;
+			margin-right: 250px;
+			margin-left: 40px;
+		}
+		.right3{
+			border: 1px solid black;
+			width: 30%;
+			height: 470px;
+			float: right;
+			margin-top: 15px;
+			margin-right: 80px;
+		}
+		.right3 button{
+			width: 40%;
+			height: 35px;
+			margin-top: 20px;
+			border-radius: 15px;
+			font-size: 15px;
+			border-color: purple;
+			background: purple;
+			color: white;
+			margin-right: 240px;
+			mar
+		}
+		.right3h1 h1{
+			color: white;
+			font-size: 35px;
+			margin-top: 20px;
+		}
+		.right3p1 p{
+			color: white;
+			font-size: 25px;
+		}
+		.right3but2 button{
+			width: 60%;
+			height: 40px;
+			border-color: blue;
+			background: blue;
+			color: white;
+			margin-top: 30px;
+		}
+		.kaviya1 h1{
+		   font-size: 35px;
+		   font-style:Bold ;
+		   color: white;
+		   margin-left: 520px;
+		   margin-top: 90px;
+		}
+		.kaviya1 p{
+			color: blueviolet;
+			margin-left: 450px;
+			font-size: 40px;
+		}
+		.kaviya2{
+			display: flex;
+		}
+		.kaavi1{
+			width: 25%;
+			height: 450px;
+			border: 1px solid black;
+			background: #28282B;
+			margin-left: 100px;
+			margin-top: 90px;
+		}
+		.kaavi1:hover{
+			border: 1px solid blue;
+		}
+		.kaavi1 button{
+			border-color: purple;
+			background: purple;
+			color: white;
+			margin-top: 30px;
+			width: 60%;
+			height: 45px;
+			border-radius: 20px;
+		}
+		.yavika1 h1{
+			font-size: 30px;
+			color: white;
+			margin-top: 30px;
+			margin-left: 80px;
+			font-weight: Bold;
+		}
+		.yavika1 p{
+			font-size: 25px;
+			color: white;
+			margin-top: 10px;
+			margin-left: 80px;
+			font-weight: bold;
+		}
+		.kaavi1but2 button{
+			background: blue;
+			color: white;
+			margin-top: 70px;
+			border-color: blue;
+			margin-right: 30px;
+			height: 45px;
+			border-radius: 10px;
+			width: 60%;
+			margin-left: 30px;
+		}
+		.kaavi2{
+			width: 25%;
+			height: 450px;
+			border: 1px solid black;
+			background: #28282B;
+			margin-left: 40px;
+			margin-top: 90px;
+		}
+		.kaavi2:hover{
+			border: 1px solid blue;
+		}
+		.kaavi2 button{
+			border-color: purple;
+			background: purple;
+			color: white;
+			margin-top: 30px;
+			width: 60%;
+			height: 45px;
+			border-radius: 20px;
+		}
+		.yavika2 h1{
+			font-size: 30px;
+			color: white;
+			margin-top: 30px;
+			margin-left: 80px;
+			font-weight: Bold;
+		}
+		.yavika2 p{
+			font-size: 25px;
+			color: white;
+			margin-top: 10px;
+			margin-left: 80px;
+			font-weight: bold;
+		}
+		.kaavi2but2 button{
+			background: blue;
+			color: white;
+			margin-top: 40px;
+			border-color: blue;
+			margin-right: 30px;
+			height: 45px;
+			border-radius: 10px;
+			width: 60%;
+			margin-left: 30px;
+		}
+		.kaavi3{
+			width: 25%;
+			height: 450px;
+			border: 1px solid black;
+			background: #28282B;
+			margin-left: 40px;
+			margin-top: 90px;
+		}
+		.kaavi3:hover{
+			border: 1px solid blue;
+		}
+		.kaavi3 button{
+			border-color: purple;
+			background: purple;
+			color: white;
+			margin-top: 30px;
+			width: 60%;
+			height: 45px;
+			border-radius: 20px;
+		}
+		.yavika3 h1{
+			font-size: 30px;
+			color: white;
+			margin-top: 30px;
+			margin-left: 80px;
+			font-weight: Bold;
+		}
+		.yavika3 p{
+			font-size: 25px;
+			color: white;
+			margin-top: 10px;
+			margin-left: 80px;
+			font-weight: bold;
+		}
+		.kaavi3but2 button{
+			background: blue;
+			color: white;
+			margin-top: 20px;
+			border-color: blue;
+			margin-right: 30px;
+			height: 45px;
+			border-radius: 10px;
+			width: 60%;
+			margin-left: 30px;
+		}
+		.parent2{
+			height: 700px;
+			width: 100%;
+			background: white;
+			display: flex;
+		}
+		.phone1{
+			margin-top: 250px;
+			margin-left: 120px;
+		}
+		.phone1 h1{
+			font-size: 55px;
+			color: #343434;
+			font-weight: 10px;
+		}
+		.phone1 p{
+			font-size: 30px;
+			color: #707070;
+		}
+		.phone2{
+			margin-top: 130px;
+			margin-left: 100px;
+		}
+		.phone2 img{
+			margin-bottom: 100px;
+			margin-top: 40px;
+		}
+		.phone2 p{
+			font-size: 30px;
+			margin-bottom: 100px;
+			margin-right: 20px;
+		}
+		.phone3{
+			margin-top: 110px;
+			margin-left: 100px;
+		}
+		.phone3 img{
+			margin-top: 50px;
+		}
+		.phone3 p{
+			font-size: 30px;
+			margin-top: 100px;
+		}
+		.parent3{
+			width: 100%;
+			height: 1000px;
+			background: black;
+		}
+		.sim1 h1{
+			font-size: 50px;
+			color: white;
+			margin-left: 170px;
+			padding-top: 70px;
+			font-weight: bold;
+		}
+		.sim2{
+			display: flex;
+		}
+		.sim3{
+			margin-top: 150px;
+			margin-left: 150px;
+		}
+		.sim4 button{
+			margin-top: 130px;
+			height: 50px;
+			border-radius: 10px;
+			width: 40%;
+			margin-right: 160px;
+		}
+		.sim4 p{
+			color: white;
+			margin-left: 90px;
+			margin-top: 70px;
+			font-size: 20px;
+		}
+		.sim4 h1{
+			color: white;
+			margin-left: 90px;
+			margin-top: 80px;
+		}
+		.sim4 h2{
+			color: white;
+			margin-left: 90px;
+			margin-top: 20px;
+			font-weight: lighter;
+		}
+		.sim5 button{
+			height: 50px;
+			border-radius: 10px;
+			width: 35%;
+			background: blue;
+			border: 1px solid blue;
+			color: white;
+			margin-bottom: 90px;
+			font-size: 15px;			
+		}
+		.parent4{
+			width: 100%;
+			height: 1000px;
+			background: white;
+		}
+		.mobile1 h1{
+			margin-left: 60px;
+			padding-top: 160px;
+			font-size: 60px;
+			color: #343434;
+		}
+		.mobile2{
+			display: flex;
+		}
+		.mobile3{
+			width: 28%;
+			height: 490px;
+			background: FFFFFF;
+			margin-left: 50px;	
+			margin-top: 90px;	
+			border-radius: 10px;	
+		}
+		.mobile3:hover{
+			border: 1px solid black;
+		}
+		.mobile3 img{
+			width: 85%;
+			height: 190px;
+			padding-left: 25px;
+			padding-top: 20px;
+			padding-right: 20px;
+		}
+		.mobile3 button{
+			border: 1px solid white;
+			color: purple;
+			background: #E6E6FA;
+			width: 20%;
+			height: 30px;
+			border-radius: 40px;
+			margin-left: 20px;
+			margin-top: 25px;
+		}
+		.mobile3 h1{
+			color: #343434;
+			margin-top: 20px;
+			margin-left: 20px;
+		}
+		.cover1{
+			width: 28%;
+			height: 490px;
+			background: FFFFFF;
+			margin-left: 50px;	
+			margin-top: 90px;	
+			border-radius: 10px;
+		}
+		.cover1:hover{
+			border: 1px solid black;
+		}
+		.cover1 img{
+			width: 85%;
+			height: 190px;
+			padding-left: 25px;
+			padding-top: 20px;
+			padding-right: 20px;
+		}
+		.cover1 button{
+			border: 1px solid white;
+			color: orange;
+			background: #E6E6FA;
+			width: 20%;
+			height: 30px;
+			border-radius: 40px;
+			margin-left: 20px;
+			margin-top: 25px;
+		}
+		.cover1 h1{
+			color: #343434;
+			margin-top: 20px;
+			margin-left: 20px;
+		}
+		.cover2{
+			width: 28%;
+			height: 490px;
+			background: FFFFFF;
+			margin-left: 50px;	
+			margin-top: 90px;	
+			border-radius: 10px;
+		}
+		.cover2:hover{
+			border: 1px solid black;
+		}
+		.cover2 img{
+			width: 85%;
+			height: 190px;
+			padding-left: 25px;
+			padding-top: 20px;
+			padding-right: 20px;
+		}
+		.cover2 button{
+			border: 1px solid white;
+			color: green;
+			background: #E6E6FA;
+			width: 20%;
+			height: 30px;
+			border-radius: 40px;
+			margin-left: 20px;
+			margin-top: 25px;
+		}
+		.cover2 h1{
+			color: #343434;
+			margin-top: 20px;
+			margin-left: 20px;
+		}
+		.finger{
+			width: 100%;
+			height: 450px;
+			background: white;
+		}
+		.cover3{
+			width: 80%;
+			height: 200px;
+			background: black;
+			padding-top: 100px;
+			margin-left: 70px;
+			margin-top: 100px;
+			border-radius: 30px;
+		}
+		.cover3 h1{
+			color: white;
+			margin-left: 80px;
+			margin-bottom: 100px;
+			font-size: 45px;
+		}
+		.cover3 button{
+			color: white;
+			background: blue;
+			border: 1px solid blue;
+			border-radius: 20px;
+			float: right;
+			margin-bottom: 100px;
+		}
+</style>
+</head>
+<body>
+	<nav class="nav1">
+		<div class="top">
+			<ul>
+				<li></li>
+				<li><a href="Test.html">En</a></li>
+				<li><a href="Test.html">Support</a></li>
+				<li><a href="Test.html">Signin</a></li>
+			</ul>
+		</div> 
+	</nav>
+	<nav class="nav2">
+		
+		<div class="class">
+			<input type = "submit" name="" value = "GET STARTED">
+			<ul>
+				<img src="https://kissflow.com/hubfs/kissflow_logo_web.svg "width= "130" height="25" >
+		    	<li></li>
+		    	<li><a href="Test.html">Platform</a></li>
+		    	<li><a href="Test.html">Solutions</a></li>
+		   		<li><a href="Test.html">AppStore</a></li>
+		   		<li><a href="Test.html">Resourses</a></li>
+		   		<li><a href="Test.html">Pricing</a></li>
+		   	</ul>
+		</div>
+	</nav>
+		<div class="kaviya">
+	    <h1> The Only Enterprise Low-Code Platform Build</h1>
+	    <p> for multiple persons</p>
+	    <input type = "submit" name="" value = "GET STARTED">
+	    <h2> Trused by 10,000+ customers worldwide</h2>
+		</div>
+	<div class="main">
+		<div class="image1">
+			<p> IT Leaders </p>
+		<img src="https://kissflow.com/hubfs/Lottie%20JSON/four.png">
+		</div>
+		<div class="image2">
+			<p> Developers </p>
+			<img src="https://kissflow.com/hubfs/Lottie%20JSON/three.png">
+		</div>	
+		<div class="image3">
+			<p> ProcessOwners </p>
+			<img src="https://kissflow.com/hubfs/Lottie%20JSON/one.png">
+		</div>
+		<div class="image4">
+			<p> BusinessUsers </p>
+			<img src="https://kissflow.com/hubfs/Lottie%20JSON/two.png">
+		</div>
+	</div>
+	<br><br>
+	<div class="board">
+	    <img src="https://kissflow.com/hubfs/Logo%20cloud/Kissflow-logo_cloud.webp">
+    </div>
+	<div class="parent1">
+		<h3> Reset your expectations for </h3>
+		<p1> low-code development </p1>
+		<div class="child1">
+			<div class="left1">
+				<img src= "	https://kissflow.com/hs-fs/hubfs/Apps.webp?width=1360&height=1120&name=Apps.webp">
+			<div class="right1">
+				<input type = "submit" name="" value = "APPS">
+				<h4> All the power you need to  turn ideas into reality</h4>	
+				<p2> Create modern, sophisticated applications faster than you can belive with minimal coding </p2>
+				<center>
+					<button>Explore App Development</button>
+				</center>
+			</div>
+			</div>
+		</div>
+		<div class="left2">
+			<center>
+				<button>PROCESSES</button>
+			</center>
+			<div class="lefth1">
+				<h1>No-code,automated workflows,just like you imagined</h1>
+			</div><br>
+			<div class="leftp1">
+				<p>Use our unique form-first approach to rapidly design, and streamline real business sollutions</p>
+			</div>
+			<div class="leftbut2">
+				<center>
+					<button>Explore workflow management</button>
+				</center>
+			</div>
+		</div>
+		<div class="right2">
+			<img src= "	https://kissflow.com/hs-fs/hubfs/Process.webp?width=1360&height=1120&name=Process.webp">
+		</div>
+		<div class="left3">
+			<img src="https://kissflow.com/hs-fs/hubfs/Boards.webp?width=1360&height=1120&name=Boards.webp">
+		</div>
+		<div class="right3">
+			<center>
+				<button>Board</button>
+			</center>
+			<div class="right3h1">
+				<h1>Next-level case management gets work done faster</h1>
+			</div><br>
+			<div class="right3p1">
+				<p>Coordinate essential work with a highly visual, flexible, and intuitive layout</p>
+			</div>
+			<div class="right3but2">
+				<center>
+					<button>Explore case management</button>
+				</center>
+			</div>
+		</div>
+		<div class="kaviya1">
+			<h1>Turbocharge</h1>
+			<p>Low-code development</p>
+		</div>
+		<div class="kaviya2">
+			<div class="kaavi1">
+				<center>
+					<button>EXTERNAL PORTALS</button>
+				</center>
+				<div class="yavika1">
+					<h1>Open up your<br> apps to the<br> world</h1>
+					<p>Give access to vendors,<br> customers, and other<br>collaborators</p>
+				</div>
+				<div class="kaavi1but2">
+				<center>
+					<button>Explore External Portals</button>
+				</center>
+			    </div>
+			</div>
+			<div class="kaavi2">
+				<center>
+					<button>INTEGRATIONS</button>
+				</center>
+				<div class="yavika2">
+					<h1>Instant<br>conections to<br>all your systems</h1>
+					<p>Integrate with your current<br>ecosystem with easy no-<br>code conectors</p>
+				</div>
+				<div class="kaavi2but2">
+					<center>
+						<button>Explore Integrations</button>
+					</center>
+				</div>
+			</div>
+			<div class="kaavi3">
+				<center>
+					<button>REPORTING&ANALYTICS</button>
+				</center>
+				<div class="yavika3">
+					<h1>Customized,<br>actionable<br>insights</h1>
+					<p>Make decitions based on<br>accurate and visual data<br>on a flexible interface</p>
+				</div>
+				<div class="kaavi3but2">
+					<center>
+						<button>Explore Analytics</button>
+					</center>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="parent2">
+		<div class="phone1">
+			<h1>Jump into the<br>low-code<br>revolution</h1>
+			<p>Explore a new approach to<br>application development</p>
+		</div>
+		<div class="phone2">
+			<img src= "	https://kissflow.com/hubfs/Imported%20sitepage%20images/g2.svg">
+			<p>"Adavnced automation of<br>all processes is easy to set<br>up.I cannot imagine how<br>to manage workflows<br>without this software."</p>
+		</div>
+		<div class="phone3">
+			<img src="https://kissflow.com/hubfs/gartner1.svg">
+			<p>"Truely a simply platform to<br>use that manages<br>complexity under the<br>hood."</p>
+		</div>
+	</div>
+	<div class="parent3">
+		<div class="sim1">
+			<h1>See how IT leaders<br>accelerate digital transformation<br>with kissflow</h1>
+		</div>
+		<div class="sim2">
+			<div class="sim3">
+			<img src="	https://kissflow.com/hubfs/softbank-kf.png">
+			</div>
+			<div class="sim4">
+			<center>
+				<button>SBTelecom america</button>
+			</center>
+			<p>"The beauty of kissflow is how quick and easy it is to create<br>the apps I need.It's so user-friendly that I made exactly<br>what I needed in 30 minutes."</p>
+			<h1>Oliver Umehara</h1>
+			<h2>IT Manager</h2>
+			<div class="sim5">
+				<center>
+					<button>Read case study</button>
+				</center>
+			</div>
+			</div>
+		</div>
+	</div>
+	<div class="parent4">
+		<div class="mobile1">
+			<h1>More ways to speed up your<br>low-code development joureny</h1>
+		</div>
+		<div class="mobile2">
+			<div class="mobile3">
+				<img src="kissflow.webp">
+					<button>eBook</button>
+				<h1>The advantages of using<br>low-code development</h1>
+			</div>
+		<div class="cover1">
+			<img src="kissflow1.webp">
+			<button>Webinar</button>
+			<h1>Transform your<br>understanding of citizen<br>development</h1>
+		</div>
+		<div class="cover2">
+			<img src="kissflow2.webp">
+			<button>Videos</button>
+			<h1>Kissflow for IT leaders</h1>
+		</div>
+	</div>
+	<div class="finger">
+		<div class="cover3">
+			<h1>See how kissflow delivers the<br>fastest time-to-value in the<br>market</h1>
+			<button>Get Started</button>
+		</div>
+	</div>
+	<footer>
+	  <div class="parent">
+		<div class="child">
+				<ul>
+					<li><h1>Use Cases</h1></li>
+					<li><a href="Test.html"> Digital Transformation</a></li>
+					<li><a href="Test.html"> App Development</a></li>
+					<li><a href="Test.html"> LowCode</a></li>
+					<li><a href="Test.html"> Worlflow Managment</a></li>
+					<li><a href="Test.html"> Citizen Development</a></li>
+					<li><a href="Test.html"> Procurement Cloud</a></li>
+					<li><a href="Test.html"> Project Managment</a></li>
+				</ul>
+			</div>
+					<div class="child">
+				<ul>
+					<li><h1>Expand & Learn</h1></li>
+					<li><a href="Test.html"> Platform Overview</a></li>
+					<li><a href="Test.html"> Customers</a></li>
+					<li><a href="Test.html"> Community</a></li>
+					<li><a href="Test.html"> Testimoials</a></li>
+					<li><a href="Test.html"> Partners</a></li>
+					<li><a href="Test.html"> Academy</a></li>
+					<li><a href="Test.html"> Documentations</a></li>
+					<li><a href="Test.html"> Events</a></li>
+					<li><a href="Test.html"> Language</a></li>
+				</ul>
+			</div>
+					<div class="child">
+				<ul>
+					<li><h1>Security & Privacy</h1></li>
+					<li><a href="Test.html"> Compilance</a></li>
+					<li><a href="Test.html"> Security</a></li>
+					<li><a href="Test.html"> Terms of Services</a></li>
+					<li><a href="Test.html"> Privacy policy</a></li>
+					<li><a href="Test.html"> GDRP policy</a></li>
+					<li><a href="Test.html"> Responsible Disclosure</a></li>
+					<li><a href="Test.html"> Project Managment</a></li>
+				</ul>
+			</div>
+					<div class="child">
+				<ul>
+					<li><h1>About Kissflow</h1></li>
+					<li><a href="Test.html"> Company</a></li>
+					<li><a href="Test.html"> What's New</a></li>
+					<li><a href="Test.html"> Customer Success</a></li>
+					<li><a href="Test.html"> Careers</a></li>
+					<li><a href="Test.html"> News and Media</a></li>
+					<li><a href="Test.html"> Culture</a></li>
+					<li><a href="Test.html"> Bransd Assets</a></li>
+					<li><a href="Test.html"> Contact Us</a></li>
+				</ul>
+			</div>
+		</div>
+	  </div>
+	</footer>
+</body>
+</html>
